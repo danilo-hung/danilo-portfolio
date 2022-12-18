@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* header styling */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 11, 4, 0.7), rgba(30, 11, 4, 0.7)), url(./material/cover.jpeg);
+    background-position: 70% 0%;
+    background-size: cover;
+    position: relative;
+}
+
+/* nav bar styling */
+nav {
+    display: flex;
+    padding: 15px 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-badge p {
+    margin: 0 1rem;
+    color: white;
+    font-size: 2rem;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links a {
+    margin-top: 0.5rem;
+    display: inline-block;
+    padding: 8px 12px;
+    margin-left: 1rem;
+    color: rgb(104, 104, 104);
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-links a:hover {
+    color: white;
+    font-weight: 600;
+}
+.nav-links a:active{
+    color: white;
+}
+.nav-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #FDA;
+    display: block;
+    margin-top: 0.2rem;
+    transition: 300ms;
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+.nav-links a:active::after {
+    width: 100%;
+}
+nav .fa-bars,
+nav .fa-xmark {
+    display: none;
+}
+/* header header-text-box styling */
+.header-text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.4rem;
+    text-align: center;
+}
+.header-text-box p:nth-child(1) {
+    text-align: center;
+    font-size: 2rem;
+}
+.header-text-box p:nth-child(2) {
+    text-align: center;
+    font-size: 2rem;
+}
+.header-text-box p:nth-child(2) span {
+    font-weight: 900;
+    color: rgb(255, 195, 105);
+    font-size: 5rem;
+}
+.header-text-box p:nth-child(2) span.ch-name {
+    font-size: 1rem;
+}
+.header-text-box p:nth-child(3) {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: rgb(255, 195, 105);
+}
+.header-text-box p:nth-child(4) {
+    max-width: 800px;
+    text-align: left;
+    margin: 3rem 5rem 0rem;
+    font-size: 0.8rem;
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    position: relative;
+}
+@media screen and (max-width: 700px) {
+    .header-text-box p:nth-child(1) {
+        font-size: 1.2rem;
+    }
+    .header-text-box p:nth-child(2) {
+        margin-top: 15px;
+    }
+    .header-text-box p:nth-child(2) span {
+        font-size: 2rem;
+    }
+    .header-text-box p:nth-child(2) span.ch-name {
+        font-size: 1rem;
+    }
+    .header-text-box p:nth-child(3) {
+        font-size: 1.8rem;
+    }
+    .header-text-box p:nth-child(4) {
+        margin: 3rem 0rem 0rem;
+        font-size: 0.6rem;
+        width: 90%;
+    }
+
+    .nav-links a {
+        display: block;
+        text-align: left;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background: rgba(255, 174, 52, 0.9);
+        z-index: 2;
+        align-items: center;
+        transition: all 500ms ease-in-out;
+    }
+
+    nav .fa-bars,
+    nav .fa-xmark {
+        display: block;
+        margin: 1rem;
+        color: #FDA;
+        font-size: 2rem;
+        cursor: pointer;
+        text-align: left;
+        transition: all 200ms ease;
+    }
+
+
+    nav .fa-bars:hover,
+    nav .fa-xmark:hover {
+        color: rgb(247, 247, 247);
+    }
+    nav .fa-bars:active,
+    nav .fa-xmark:active {
+        color: rgb(255, 104, 104);
+    }
+    .nav-links div{
+        padding: 30px;
+    }
+}
