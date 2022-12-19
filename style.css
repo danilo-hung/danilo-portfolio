@@ -551,10 +551,14 @@ nav .fa-xmark {
     background-color: bisque;
     box-shadow: 0 0 10px 0px rgb(105, 36, 15);
     overflow: hidden;
+    transition: 300ms;
 }
 .gizmo-row .img-col img{
     width: 450px;
     height: 450px;
+}
+.gizmo-row .img-col:hover{
+    box-shadow: 0 0 30px 0px rgba(255, 174, 34, 1);
 }
 
 
