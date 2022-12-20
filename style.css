@@ -503,9 +503,10 @@ nav .fa-xmark {
 /* gizmo item */
 .gizmo-container {
     margin: auto;
-    width: 90%;
+    width: 95%;
+    max-width: 1467px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
     padding: auto;
@@ -604,10 +605,13 @@ nav .fa-xmark {
     background: rgb(255, 174, 34);
     background: linear-gradient(0deg, rgb(131, 121, 88) 0%, rgba(255, 174, 34, 0.493) 50%);
 }
-@media screen and (max-width: 1584px) {
+@media screen and (max-width: 1017px) {
     .gizmo-container{
         justify-content: center;
     }
+    /* .gizmo-row {
+        width: 90%
+    } */
 }
 @media screen and (max-width: 425px) {
     .gizmo-name {
