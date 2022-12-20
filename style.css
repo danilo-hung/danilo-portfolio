@@ -389,7 +389,7 @@ nav .fa-xmark {
 
 .project-row .text-col {
     list-style-type: decimal;
-    flex-basis: 60%;
+    max-width: 600px;
     padding: 1rem 1rem;
     letter-spacing: 0.2rem;
     font-size: 0.9rem;
@@ -413,8 +413,9 @@ nav .fa-xmark {
 }
 
 .project-row .img-col {
-    width: 450px;
-    margin-top: 80px;
+    width: 800px;
+    margin-top: 90px;
+    margin-left: 1em;
     margin-bottom: 30px;
     border-radius: 10px;
     overflow: hidden;
@@ -438,19 +439,18 @@ nav .fa-xmark {
 }
 
 .link i {
-    font-size: 2rem;
+    font-size: 3rem;
+    margin: 0 1rem;
 }
 
-.link.github:hover {
+.link.github{
     color: rgb(104, 0, 202);
     box-shadow: none;
-    font-size: 2.1rem;
 }
 
 .link:hover {
     color: rgb(255, 162, 0);
     box-shadow: none;
-    font-size: 2.1rem;
 }
 
 
@@ -458,7 +458,7 @@ nav .fa-xmark {
 @media screen and (max-width:1400px) {
     .project-row .img-col {
         margin-top: 10px;
-        width: 60%;
+        width: 80%;
         height: auto;
     }
 }
@@ -489,8 +489,8 @@ nav .fa-xmark {
     .project-row .text-col p {
         font-size: 0.8rem;
         font-weight: 400;
-        margin: 1em 1em;
     }
+
 
     .project-row .img-col {
         width: 450px;
@@ -500,11 +500,12 @@ nav .fa-xmark {
     }
 }
 
+/* gizmo item */
 .gizmo-container {
     margin: auto;
     width: 90%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     padding: auto;
@@ -512,14 +513,8 @@ nav .fa-xmark {
 
 .gizmo-row {
     margin: 0rem;
-    width: 450px;
+    width: 470px;
     padding: 1rem;
-}
-
-.gizmo-row .text-col {
-    list-style-type: decimal;
-    letter-spacing: 0.2rem;
-    font-size: 0.9rem;
 }
 
 .gizmo-name {
@@ -535,14 +530,8 @@ nav .fa-xmark {
     display: block;
     margin-top: 0.3rem;
 }
-.gizmo-row .text-col b {
-    color: rgb(255, 150, 80);
-}
-.gizmo-row .text-col p {
-    color: rgb(105, 36, 15);
-    font-weight: 400;
-}
-.gizmo-row .img-col{
+
+.gizmo-row .img-col {
     margin-top: 1.3rem;
     margin-bottom: 1rem;
     border-radius: 10px;
@@ -550,18 +539,76 @@ nav .fa-xmark {
     height: 450px;
     background-color: bisque;
     box-shadow: 0 0 10px 0px rgb(105, 36, 15);
+    position: relative;
     overflow: hidden;
-    transition: 300ms;
+    transition: 200ms;
 }
-.gizmo-row .img-col img{
-    width: 450px;
-    height: 450px;
+
+.gizmo-row .img-col img {
+    width: 100%;
 }
-.gizmo-row .img-col:hover{
+
+.gizmo-row .img-col:hover {
     box-shadow: 0 0 30px 0px rgba(255, 174, 34, 1);
 }
 
+.gizmo-row .text-col {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style-type: decimal;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+}
+.link-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 300ms;
+}
+.gizmo-row .text-col:hover .link-container,
+.gizmo-row .text-col:focus .link-container{
+    bottom: 50%;
+    opacity: 100%;
+}
+.gizmo-row .text-col p{
+    padding: 0 2rem;
+    position:absolute;
+    bottom:0;
+    transform: translateY(150%);
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    transition: 300ms;
+}
+.gizmo-row .text-col:hover p,
+.gizmo-row .text-col:focus p{
+    opacity: 100%;
+    transform: translateY(0);
 
+}
+
+.gizmo-row .text-col a {
+    text-align: center;
+}
+
+
+.gizmo-row .text-col:hover,
+.gizmo-row .text-col:focus {
+    background: rgb(255, 174, 34);
+    background: linear-gradient(0deg, rgb(131, 121, 88) 0%, rgba(255, 174, 34, 0.493) 50%);
+}
+@media screen and (max-width: 1584px) {
+    .gizmo-container{
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 425px) {
     .gizmo-name {
         font-size: 1rem;
@@ -573,11 +620,13 @@ nav .fa-xmark {
         flex-basis: 100%
     }
 
-    .gizmo-row .img-col{
+    .gizmo-row .img-col {
         width: 320px;
         height: 320px;
+        margin: auto;
     }
-    .gizmo-row .img-col img{
+
+    .gizmo-row .img-col img {
         width: 320px;
         height: 320px;
     }
