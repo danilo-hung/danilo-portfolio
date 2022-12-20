@@ -561,8 +561,8 @@ nav .fa-xmark {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid white;
-  background: rgba(214, 145, 24, 0.521);
-  box-shadow: 0 0 10px 5px rgba(255, 174, 34, 0.2);
+  background: rgba(105, 36, 15, 0.5);
+  box-shadow: 0 0 10px 5px rgba(105, 36, 15, 0.5);
 }
 .gizmo-row .text-col .button p {
   color: white;
@@ -608,6 +608,11 @@ nav .fa-xmark {
   .gizmo-name {
     font-size: 1rem;
     margin-left: 30px;
+  }
+  .gizmo-row .quote{
+    margin-top: 20px;
+    margin-left:30px;
+    font-size: 0.7rem;
   }
 
   .gizmo-row .text-col {
@@ -690,8 +695,12 @@ nav .fa-xmark {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.contact .title{
+  color: whitesmoke;
+}
 
 .contact .text-col {
+  color: rgb(105, 36, 15);
   margin: auto;
   display: flex;
   justify-content: space-between;
