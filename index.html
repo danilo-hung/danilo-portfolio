@@ -27,7 +27,8 @@
                 <a href="#Home">Home</a>
                 <a href="#Skill">Skill</a>
                 <a href="#Project">Portfolio</a>
-                <a href="">Contact</a>
+                <a href="#Others">Others</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
         <i class="fa-solid fa-bars" id="showIcon" onclick="showMenu()"></i>
@@ -39,6 +40,7 @@
             <p><span>Danilo</span> <br> <span class="ch-name">(洪立軒)</span> </p>
             <p>I am a Web Developer</p>
             <p>
+                <span style="font-weight: 100;font-size: 1.5em; color:#FDA ;">我曾經是都市設計師 ...</span> <br>
                 過去兩年於AECOM(香港商艾奕康股份有限公司台灣分公司)任職都市設計師。 <br>
                 除專業知識外，平時工作經常以小組為單位進行各項項目之執行，因此習慣與人共同工作。因原專業屬規劃設計相關領域，平時工作亦經常利用Adobe(包含Illustrator,
                 PhotoShop, InDesign等), ArcGIS, Lumion, SketchUp等2D及3D繪圖軟體與同事共同協作專案執行項目。 <br> 於AECOM工作一年後開始擔任Key
@@ -48,8 +50,8 @@
     </section>
     <!-- skill -->
     <section class="skill" id="Skill">
-        <h1 class="skill-title">Skill</h1>
-        <p>The Skills I Utilise</p>
+        <h1 class="title">Skill</h1>
+        <p class="sub-title">The Skills I Utilise</p>
         <div class="skill-box">
             <div class="text-box">
                 <p>Coding Related</p>
@@ -101,8 +103,8 @@
     </section>
     <!-- project -->
     <section class="project" id="Project">
-        <h1 class="project-title">Portfolio</h1>
-        <p>My Personal Projects</p>
+        <h1 class="title">Portfolio</h1>
+        <p class="sub-title">My Personal Projects</p>
         <div class="project-row">
             <div class="text-col">
                 <p class="project-name">Project : Camp.Info</p>
@@ -181,23 +183,26 @@
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-
-
             </div>
         </div>
         <div class="gizmo-container">
             <div class="gizmo-row">
-                <p class="gizmo-name">Quote Generator</p>
+                <p class="gizmo-name">Gizmo : Quote Generator</p>
                 <div class="img-col">
                     <img src="./material/quoteGenerator.png" alt="">
                     <div class="text-col">
+                        <div class="button">
+                            <p>
+                                Detail
+                            </p>
+                        </div>
                         <div class="link-container">
                             <a class="link github" href="https://github.com/danilo-hung/2022_QuoteGenerator"
                                 target="_blank"><i class="fa-brands fa-github"></i></a>
                             <a class="link" href="https://danilo-hung.github.io/2022_QuoteGenerator/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p> 透過async fetch reqest 從 web
+                        <p class="intro"> 透過async fetch reqest 從 web
                             API中抓取隨機的名言與其作者資訊。並從Tweet及Meta的開發者平台中擷取相關指令製作可將名言即時分享到動態中的DOM練習項目。
                         </p>
 
@@ -205,17 +210,22 @@
                 </div>
             </div>
             <div class="gizmo-row">
-                <p class="gizmo-name">Score Keeper</p>
+                <p class="gizmo-name">Gizmo : Score Keeper</p>
                 <div class="img-col">
                     <img src="./material/pinpongScoreKeeper.png" alt="">
                     <div class="text-col">
+                        <div class="button">
+                            <p>
+                                Detail
+                            </p>
+                        </div>
                         <div class="link-container">
                             <a class="link github" href="https://github.com/danilo-hung/pingPongScoreKeeper"
                                 target="_blank"><i class="fa-brands fa-github"></i></a>
                             <a class="link" href="https://danilo-hung.github.io/pingPongScoreKeeper/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p> 該裝置提供用戶計算桌球比賽的比分。透過設定比賽總分，當其中一方玩家達到分數時，顯示勝利玩家。網頁以Bootstrap框架設計網頁的風格，並以該框架的flex
+                        <p class="intro"> 該裝置提供用戶計算桌球比賽的比分。透過設定比賽總分，當其中一方玩家達到分數時，顯示勝利玩家。網頁以Bootstrap框架設計網頁的風格，並以該框架的flex
                             box進行切版，是一個結合styling跟JS DOM的練習項目。
                         </p>
 
@@ -223,21 +233,29 @@
                 </div>
             </div>
             <div class="gizmo-row">
-                <p class="gizmo-name">Infinite Scroll</p>
+                <p class="gizmo-name">Gizmo : Infinite Scroll</p>
                 <div class="img-col">
                     <img src="./material/InfiniteScroll.png" alt="">
                     <div class="text-col">
+                        <div class="button">
+                            <p>
+                                Detail
+                            </p>
+                        </div>
                         <div class="link-container">
                             <a class="link github" href="https://github.com/danilo-hung/2022_InfiniteScroll"
                                 target="_blank"><i class="fa-brands fa-github"></i></a>
                             <a class="link" href="https://danilo-hung.github.io/2022_InfiniteScroll/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p> Infinite Scroll 是利用unsplash api 隨機生成圖片，並使其在網頁上進行無限的loading，是一個結合styling跟JS DOM的練習項目。
+                        <p class="intro"> Infinite Scroll 是利用unsplash api 隨機生成圖片，並使其在網頁上進行無限的loading，是一個結合styling跟JS
+                            DOM的練習項目。
                         </p>
+
 
                     </div>
                 </div>
+                <p>free api key : f0iNOGLQjywiYCGHug9ETqTC9ZvHJ5109IIfsf7g2Lc</p>
             </div>
         </div>
 
@@ -245,9 +263,94 @@
 
     </section>
     <!-- Other Experience -->
-    <section class="other" id="other">
+    <section class="others" id="Others">
+        <h1 class="title">Others</h1>
+        <p class="sub-title">More about me</p>
+        <div class="others-box">
+            <div class="text-box work-experiences">
+                <p class="others-title">Work Experiences</p>
+                <p class="others-subtitle">I was an Urban Design</p>
+                <div class="break-line"></div>
+                <div class="content-container">
+                    <ul>
+                        <li>2020.Aug-2022.Aug <br> AECOM, Urban Designer II</li>
+                        <li>2017.Jul-Aug <br> 國泰人壽不動產投資部, 不動產實習生</li>
+                        <li>2016.Jul <br> 都市計畫實習生</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-box work-experiences">
+                <p class="others-title">Other Projects</p>
+                <p class="others-subtitle">when I was an Urban Design</p>
+                <div class="break-line"></div>
+                <div class="content-container">
+                    <ul>
+                        <li>Assiststant Urban Designer, 2022 <br> NEOM Regional Plan, <span
+                                style="color: rgb(255, 150, 80);">Saudi Arabia</span></li>
+                        <li>Key Design, 2021<br> North Coast & Guanyinshan National Scenic Area Development Master Plan,
+                            <span style="color:rgb(255, 150, 80);">Taiwan</span>
+                        </li>
+                        <li> Urban Designer, 2022 <br> International Tendering For Phase I Urban Design Of Shenzhen,
+                            <span style="color: rgb(255, 150, 80);">China</span>
+                        </li>
+                        <li>Assiststant Urban Designer, 2021 <br> Chenggong Water Area Recreation Master Plan, <span
+                                style="color: rgb(255, 150, 80);">Taiwan</span></li>
+                        <li> Key Design, 2021 <br> Takoham Local Development and Regional Comprehensive Plan, <span
+                                style="color: rgb(255, 150, 80);">Taiwan</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-box work-experiences">
+                <p class="others-title">Other Experiences</p>
+                <p class="others-subtitle">my life experiences</p>
+                <div class="break-line"></div>
+                <div class="content-container">
+                    <ul>
+                        <li> 2021 <br> 第九屆台灣景觀大獎 佳作獎 : 大嵙崁計畫</li>
+                        <li> 2017 <br> ATCC全國大專院生商業個案大賽 企業第三名 : ROOT</li>
+                        <li> 2017.Oct <br> 台灣設計展-南風館策展助理</li>
+                        <li>2016-2017 <br> TEDxTainan 設計部</li>
+                        <li>2016-2017 <br>成大學生會 公關部副部長</li>
+                        <li>2015.Oct <br>臺南海安商圈微電影競賽銅獎</li>
+                        <li>2015.Oct<br>2015成大都計人生職涯博覽會 公關</li>
+                        <li>22014.Jul <br>美國遊學與打工 (聖地牙哥與紐約)</li>
+                    </ul>
+                </div>
+            </div>
 
+        </div>
     </section>
+    <!-- contat -->
+    <footer class="contact" id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="text-col">
+            <div>
+                <p> <b>Hi, there</b><br>
+                    Thank you for visiting my web ! <br>
+                    If you are looking for web developer <br>
+                    please feel free to contact me for more detail
+                </p>
+            </div>
+            <div>
+                <p class="text-center"><b>Social Media</b></p>
+                <p class="text-center fs-2">
+                    <a class="link facebook" href="https://www.facebook.com/naths.HLH" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="link instagram" href="https://www.instagram.com/danilo_hlh/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="link cakeresume" href="https://www.cakeresume.com/me/danilo-hung" target="_blank"><i class="fa-solid fa-c"></i></a>
+                    <a class="link linkedin" href="https://www.linkedin.com/in/danilo-1231/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="link github" href="https://github.com/danilo-hung" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </p>
+            </div>
+            <div>
+                <p class=""> <b>Other way to contact me</b></p>
+                <p><i class="fa-regular fa-envelope"></i> danilohung2022@gmail.com <br>
+                    <i class="fa-regular fa-envelope"></i> andyloveyoutoo2019@gmail.com
+                </p>
+
+
+            </div>
+        </div>
+    </footer>
     <!-- script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
