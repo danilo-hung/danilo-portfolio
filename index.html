@@ -54,17 +54,13 @@
         <p class="sub-title">The Skills I Utilise</p>
         <div class="skill-box">
             <div class="text-box">
-                <p>Front-end Related</p>
+                <p>Coding Related</p>
                 <ul>
                     <li><i class="fa-brands fa-html5"></i>HTML5</li>
                     <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
                     <li><i class="fa-brands fa-js"></i>JavaScript</li>
                     <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
                     <li><i class="fa-brands fa-react"></i>React.js</li>
-                </ul>
-                <div class="education"></div>
-                <p>Back-end Related</p>
-                <ul>
                     <li><i class="fa-brands fa-node-js"></i>Node.js</li>
                     <li><i class="fa-solid fa-wrench"></i>Express</li>
                     <li><i class="fa-solid fa-wrench"></i>EJS</li>
@@ -109,6 +105,84 @@
     <section class="project" id="Project">
         <h1 class="title">Portfolio</h1>
         <p class="sub-title">My Personal Projects</p>
+
+
+        <div class="project-row">
+            <div class="text-col">
+                <p class="project-name">Project : Danilo-shop</p>
+                <p><b>專案介紹 : </b></p>
+                <p> Danilo-shop
+                    是以ReactJs + GoogleFireBase製作的網購平台Demo，用戶在web app上可以註冊或登入帳號，將不同類別的產品放置購物車，然後進行結帳。設計此網站的動機是為了實踐對於ReactJS熟悉度並架設相對功能複雜的網站應用程式的能力。
+                </p>
+                <p><b>專案連結 : </b></p>
+                <a class="link github" href="https://github.com/danilo-hung/danilo-shop-public" target="_blank"><i
+                        class="fa-brands fa-github"></i></a>
+                <a class="link" href="https://danilo-shop-site.netlify.app/" target="_blank"><i
+                        class="fa-solid fa-desktop"></i></a>
+                <p><b>專案涉及工具 : </b></p>
+                <p>JSX, SCSS, ReactJS, GoogleFireBase </p>
+                <div>
+                    <p> <b>專案工作方法 : </b> </p>
+                    <ul>
+                        <li>透過react-router建構web app url route關係，其中透過import "<Outlet/>" 將nav bar 固定於網頁置頂 </li>
+                        <li>以noSQL系統的Google FireBase做為網頁數據庫，應用該數據庫製作網站的登入及註冊系統 (包含Google登入系統)</li>
+                        <li>以React Context建立全域性資料，包含用戶資料, 商品資料以及購物車產品資料，以供Components使用，避免prop drilling的問題</li>
+                        <li>以Nested Route 建立不同類型商品的網頁 (ex: shop/hats, shop/jackets ...)</li>
+                        <li>透過styled component建立CSSinJS，將過程中的scss style改成styled jsx，避免style重複的課題</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                            aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                            aria-label="Slide 6"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./material/daniloShop_1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./material/daniloShop_2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./material/daniloShop_3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./material/daniloShop_4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./material/daniloShop_5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./material/daniloShop_6.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
         <div class="project-row">
             <div class="text-col">
                 <p class="project-name">Project : Camp.Info</p>
@@ -191,28 +265,6 @@
         </div>
         <div class="gizmo-container">
             <div class="gizmo-row">
-                <p class="gizmo-name">Gizmo : Kittens Rolodex</p>
-                <div class="img-col">
-                    <img src="./material/kittensRolodex.png" alt="">
-                    <div class="text-col">
-                        <div class="button">
-                            <p>
-                                Detail
-                            </p>
-                        </div>
-                        <div class="link-container">
-                            <a class="link github" href="https://github.com/danilo-hung/kittens-rolodex"
-                                target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a class="link" href="https://danilo-hung.github.io/kittens-rolodex/" target="_blank"><i
-                                    class="fa-solid fa-desktop"></i></a>
-                        </div>
-                        <p class="intro"> 該裝置模擬公司成員介紹清單 : 可透過搜尋功能過濾成員，並顯示詳細的成員資訊。網頁同時以ReactJS Class以及Functional (Hook)邏輯編程；風格以手刻CSS進行animate的渲染。
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="gizmo-row">
                 <p class="gizmo-name">Gizmo : Quote Generator</p>
                 <div class="img-col">
                     <img src="./material/quoteGenerator.png" alt="">
@@ -277,10 +329,11 @@
                         <p class="intro"> Infinite Scroll 是利用unsplash api 隨機生成圖片，並使其在網頁上進行無限的loading，是一個結合styling跟JS
                             DOM的練習項目。
                         </p>
+
+
                     </div>
                 </div>
-                <p class="quote">free api key : f0iNOGLQjywiYCGHug9ETqTC9ZvHJ5109IIfsf7g2Lc</p>
-
+                <p style="font-size: 0.3rem;">free api key : f0iNOGLQjywiYCGHug9ETqTC9ZvHJ5109IIfsf7g2Lc</p>
             </div>
         </div>
 
@@ -357,14 +410,6 @@
                 </p>
             </div>
             <div>
-                <p> <b>您好</b><br>
-                    謝謝您造訪我的個人網站 <br>
-                    如果您正在尋找前端工程師夥伴 <br>
-                    請不吝與我聯繫洽談更多的細節 <br>
-                    祝您有個愉快的一天
-                </p>
-            </div>
-            <div class="link-c">
                 <p class="link-box">
                     <a class="link facebook" href="https://www.facebook.com/naths.HLH" target="_blank"><i
                             class="fa-brands fa-facebook"></i></a>

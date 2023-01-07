@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 
 * {
   margin: 0;
@@ -561,8 +561,8 @@ nav .fa-xmark {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 1px solid white;
-  background: rgba(105, 36, 15, 0.5);
-  box-shadow: 0 0 10px 5px rgba(105, 36, 15, 0.5);
+  background: rgba(214, 145, 24, 0.521);
+  box-shadow: 0 0 10px 5px rgba(255, 174, 34, 0.2);
 }
 .gizmo-row .text-col .button p {
   color: white;
@@ -608,11 +608,6 @@ nav .fa-xmark {
   .gizmo-name {
     font-size: 1rem;
     margin-left: 30px;
-  }
-  .gizmo-row .quote{
-    margin-top: 20px;
-    margin-left:30px;
-    font-size: 0.7rem;
   }
 
   .gizmo-row .text-col {
@@ -695,12 +690,8 @@ nav .fa-xmark {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.contact .title{
-  color: whitesmoke;
-}
 
 .contact .text-col {
-  color: rgb(105, 36, 15);
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -710,9 +701,6 @@ nav .fa-xmark {
 }
 .contact .text-col div {
   width: 320px;
-}
-.contact .text-col div.link-c {
-  align-self: center;
 }
 .contact .text-col > div .link-box {
   text-align: center;
