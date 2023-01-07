@@ -695,8 +695,12 @@ nav .fa-xmark {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.contact .title{
+  color: whitesmoke;
+}
 
 .contact .text-col {
+  color: rgb(105, 36, 15);
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -706,6 +710,9 @@ nav .fa-xmark {
 }
 .contact .text-col div {
   width: 320px;
+}
+.contact .text-col div.link-c {
+  align-self: center;
 }
 .contact .text-col > div .link-box {
   text-align: center;
