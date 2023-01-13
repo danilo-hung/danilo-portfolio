@@ -417,6 +417,12 @@ nav .fa-xmark {
   transition: 300ms;
 }
 
+.link #link-word{
+  color: rgb(105, 36, 15);
+  text-decoration: none;
+  transition: 300ms;
+}
+
 .link i {
   font-size: 2rem;
   margin: 0 1rem;
@@ -425,6 +431,15 @@ nav .fa-xmark {
 .link.github:hover {
   color: rgb(104, 0, 202);
   box-shadow: none;
+}
+.link.google:hover {
+  color:#fbbc05
+}
+.link.netlify #link-word:hover{
+  color: rgb(104, 0, 202);
+}
+.link.render #link-word:hover{
+  color: #2c7be5;
 }
 
 .link:hover {
