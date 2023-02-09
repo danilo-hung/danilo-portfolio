@@ -239,6 +239,8 @@ nav .fa-xmark {
   color: rgb(255, 150, 80);
 }
 .skill-box {
+  margin: auto;
+  max-width: 1700px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -494,10 +496,11 @@ nav .fa-xmark {
 /* gizmo item */
 .gizmo-container {
   margin: auto;
+  max-width: 1400px;
   width: 95%;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content:left;
+  align-items: start;
   flex-wrap: wrap;
   padding: auto;
 }
