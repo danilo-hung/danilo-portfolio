@@ -24,11 +24,12 @@
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-xmark" id="hideIcon" onclick="hideMenu()"></i>
             <div>
-                <a href="#Home">Home</a>
-                <a href="#Skill">Skill</a>
-                <a href="#Project">Portfolio</a>
-                <a href="#Others">Others</a>
-                <a href="#contact">Contact</a>
+                <a href="#Home" id="homePageLang">首頁</a>
+                <a href="#Skill" id="skillLang">技術</a>
+                <a href="#Project" id="portfolioLang">作品集</a>
+                <a href="#Others" id="otherLang">其他</a>
+                <a href="#contact" id="contactLang">聯繫我</a>
+                <a id="changeLan" style="cursor: pointer; color:rgb(104, 104, 104)">lan: 中文</a>
             </div>
         </div>
         <i class="fa-solid fa-bars" id="showIcon" onclick="showMenu()"></i>
@@ -37,24 +38,24 @@
     <section class="header" id="Home">
         <div class="header-text-box">
             <p>Hi There, my name is </p>
-            <p><span>Danilo</span> <br> <span class="ch-name">(洪立軒)</span> </p>
+            <p><span>Danilo</span></p>
             <p>I am a Web Developer</p>
             <p>
-                <span style="font-weight: 100;font-size: 1.5em; color:#FDA ;">我目前在Cienet擔任前端工程師 ...</span> <br>
-                2023年起在Cienet擔任前端工程師，參與之業務包含既有網頁系統的維護以及網頁功能的開發與測試。熟悉的基礎技術包含HTML, CSS, JS, TS，其中Frame work主要使用Angular以及React，CSS框架則以BootStrap為主。<br>
+                <span style="font-weight: 100; font-size: 1.5em; color:#FDA" id = "introTitle"> 我目前在Cienet擔任前端工程師 ... </span> <br>
+                <span id="introContent" > 2023年起在Cienet擔任前端工程師，參與之業務包含既有網頁系統的維護以及網頁功能的開發與測試。熟悉的基礎技術包含HTML, CSS, JS, TS，其中Frame work主要使用Angular以及React，CSS框架則以BootStrap為主。<br>
                 近期因應嵌入式AI的發展與趨勢，亦研究VSCode Extension的開發，並應用協助團隊操作自動化流程之業務，故熟悉VSCode API, VSCode Extension Development之技術，並足以依相關需求獨立開發VSCode擴展應用程式。<br><br>
                 在擔任軟體工程師以前，曾任職於AECOM都市設計師，並於第二年起擔任Key Designer。工作的內容主要帶領團隊成員共同執行專案，管理專案進度執行以及業主(/客戶)的溝通協調，確保項目進度穩定執行。<br>
-                綜上工作經歷，使我熟悉與他人共同工作，與團隊共同為目標一起精進技術與前進。
+                綜上工作經歷，使我熟悉與他人共同工作，與團隊共同為目標一起精進技術與前進。 </span> 
             </p>
         </div>
     </section>
     <!-- skill -->
     <section class="skill" id="Skill">
-        <h1 class="title">Skill</h1>
+        <h1 class="title" id="skillLang1">技術</h1>
         <p class="sub-title">The Skills I Utilise</p>
         <div class="skill-box">
             <div class="text-box">
-                <p>Front-end Related</p>
+                <p id="frontEndRelatedLan">前端相關技術</p>
                 <ul>
                     <li><i class="fa-brands fa-html5"></i>HTML5</li>
                     <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
@@ -64,7 +65,7 @@
                     <li><i class="fa-brands fa-react"></i>Angular</li>
                 </ul>
                 <div class="education"></div>
-                <p>Back-end Related</p>
+                <p id="backEndRelatedLan">後端相關技術</p>
                 <ul>
                     <li><i class="fa-brands fa-node-js"></i>Node.js</li>
                     <li><i class="fa-solid fa-wrench"></i>Express</li>
@@ -75,7 +76,7 @@
                 </ul>
             </div>
             <div class="text-box">
-                <p>Other Related</p>
+                <p id="otherSkillLan">其他技術</p>
                 <ul>
                     <li><img src="./material/adobe_icon-01.svg" class="icon-ai">Illustrator</li>
                     <li><img src="./material/adobe_icon-02.svg" class="icon-ai">PhotoShop</li>
@@ -90,17 +91,17 @@
                 </ul>
             </div>
             <div class="text-box">
-                <p>Language Ability</p>
+                <p id="lanSkillLan">語言能力</p>
                 <ul>
-                    <li>中文</li>
-                    <li>English</li>
+                    <li id="chineseLan">中文</li>
+                    <li id="englishLan">英文</li>
                 </ul>
                 <div class="education"></div>
-                <p>Education</p>
+                <p id="eduLan">學歷</p>
                 <ul>
-                    <li>2020 MA in Urban Design, Newcastle University, UK</li>
+                    <li id="masterLan">2020 城市設計碩士, 紐卡斯爾大學, 英國</li>
 
-                    <li>2017 都市計劃學系學士, 國立成功⼤學, 臺灣</li>
+                    <li id="bachelorLan">2017 都市計劃學系學士, 國立成功⼤學, 臺灣</li>
 
                 </ul>
             </div>
@@ -108,36 +109,36 @@
     </section>
     <!-- project -->
     <section class="project" id="Project">
-        <h1 class="title">Portfolio</h1>
+        <h1 class="title" id="portfolioLang1">作品集</h1>
         <p class="sub-title">My Personal Projects</p>
 
 
         <div class="project-row">
             <div class="text-col">
                 <p class="project-name">Project : danilo-shop</p>
-                <p><b>專案介紹 : </b></p>
-                <p> danilo-shop
+                <p><b id="pjIntroLan">專案介紹 : </b></p>
+                <p id="pjIntroContentLan"> danilo-shop
                     是以ReactJs + GoogleFireBase製作的Single web app 網購平台Demo，用戶在web
                     app上可以註冊或登入帳號，將不同類別的產品放置購物車，然後進行結帳。設計此網站的動機是為了實踐對於ReactJS熟悉度並架設相對功能複雜的網站應用程式的能力。
                 </p>
-                <p><b>專案連結 : </b></p>
+                <p><b id="pjLinkLan">專案連結 : </b></p>
                 <a class="link github" href="https://github.com/danilo-hung/danilo-shop" target="_blank"><i
                         class="fa-brands fa-github"></i></a>
                 <a class="link google" href="https://crwn-clothing-db-62b2f.firebaseapp.com/" target="_blank"><i
                         class="fa-solid fa-fire"></i></a>
                 <a class="link netlify" href="https://danilo-shopoo.netlify.app/" target="_blank"><b
                         id="link-word">Netlify</b></a>
-                <p><b>專案涉及工具 : </b></p>
+                <p><b id="pjToolsLan">專案涉及工具 : </b></p>
                 <p>JSX, SCSS, ReactJS, Redux, GoogleFireBase </p>
                 <div>
-                    <p> <b>專案工作方法 : </b> </p>
+                    <p> <b id="pjMethodLan">專案工作方法 : </b> </p>
                     <ul>
-                        <li>透過react-router建構web app url route關係，並透過import "Outlet" 將nav bar 固定於網頁置頂
+                        <li id="pjMethodLi1Lan">透過react-router建構web app url route關係，並透過import "Outlet" 將nav bar 固定於網頁置頂
                         </li>
-                        <li>以noSQL系統的Google FireBase做為網頁數據庫，應用該數據庫製作網站的登入及註冊系統 (包含Google登入系統)</li>
-                        <li>專案前期以Context, 後期改以Redux建立全域性資料(包含用戶, 商品以及購物車產品資料), 避免prop drilling的問題</li>
-                        <li>以Nested Route 建立不同類型商品的網頁 (ex: shop/hats, shop/jackets ...)</li>
-                        <li>透過styled component建立CSSinJS，將過程中的scss style改成styled jsx，避免style重複的課題</li>
+                        <li id="pjMethodLi2Lan">以noSQL系統的Google FireBase做為網頁數據庫，應用該數據庫製作網站的登入及註冊系統 (包含Google登入系統)</li>
+                        <li id="pjMethodLi3Lan">專案前期以Context, 後期改以Redux建立全域性資料(包含用戶, 商品以及購物車產品資料), 避免prop drilling的問題</li>
+                        <li id="pjMethodLi4Lan">以Nested Route 建立不同類型商品的網頁 (ex: shop/hats, shop/jackets ...)</li>
+                        <li id="pjMethodLi5Lan">透過styled component建立CSSinJS，將過程中的scss style改成styled jsx，避免style重複的課題</li>
                     </ul>
                 </div>
             </div>
@@ -195,26 +196,26 @@
         <div class="project-row">
             <div class="text-col">
                 <p class="project-name">Project : Camp.Info</p>
-                <p><b>專案介紹 : </b></p>
-                <p> Camp.Info
+                <p><b id="pjIntroLan1">專案介紹 : </b></p>
+                <p id="pjIntroContentLan1"> Camp.Info
                     是一個用戶可以瀏覽台灣各地露營地的網站，透過註冊一個新的帳戶，用戶可以創建、評論露營地的資訊與體驗心得，並且可以修改該用戶創建的露營地資訊。設計此網站的動機是為了實踐透過Node.js來架設完善功能的能力。
                 </p>
-                <p><b>專案連結 : </b></p>
+                <p><b id="pjLinkLan1">專案連結 : </b></p>
                 <a class="link github" href="https://github.com/danilo-hung/2022_CampInfo" target="_blank"><i
                         class="fa-brands fa-github"></i></a>
                 <a class="link render" href="https://danilo-yelp-camp.onrender.com/" target="_blank"><b
                         id="link-word">Render</b></a>
-                <p><b>專案涉及工具 : </b></p>
+                <p><b id="pjToolsLan1">專案涉及工具 : </b></p>
                 <p>HTML5/EJS, JavaScript, CSS-3, Bootstrap(5.2.3), Nodejs, Express, MongoDB, Joi,
                     MongoAltas, MapBox, Cloudinary, PassPortJs </p>
                 <div>
-                    <p> <b>專案工作方法 : </b> </p>
+                    <p> <b id="pjMethodLan1">專案工作方法 : </b> </p>
                     <ul>
-                        <li>以fullCRUD建立網頁系統, 建構網頁新增, 瀏覽, 編輯和刪除露營區的功能</li>
-                        <li>以noSQL系統的MongoDB做為網頁數據庫，透過一對多關係模式將Campgrounds, User, Review三種collections的數據進行連結</li>
-                        <li>以PassportJS工具建立網頁的用戶註冊/登入的驗證系統，並將用戶密碼透過該工具導入的Hash Function與 Salting提供用戶密碼基礎的保護措施</li>
-                        <li>透過Cloudinary提供用戶新增露營區相片的雲端儲存</li>
-                        <li>透過MapBox提供用戶瀏覽露營區位置時更佳的空間視覺化體驗</li>
+                        <li id="pjMethodLi1Lan1">以fullCRUD建立網頁系統, 建構網頁新增, 瀏覽, 編輯和刪除露營區的功能</li>
+                        <li id="pjMethodLi2Lan1">以noSQL系統的MongoDB做為網頁數據庫，透過一對多關係模式將Campgrounds, User, Review三種collections的數據進行連結</li>
+                        <li id="pjMethodLi3Lan1">以PassportJS工具建立網頁的用戶註冊/登入的驗證系統，並將用戶密碼透過該工具導入的Hash Function與 Salting提供用戶密碼基礎的保護措施</li>
+                        <li id="pjMethodLi4Lan1">透過Cloudinary提供用戶新增露營區相片的雲端儲存</li>
+                        <li id="pjMethodLi5Lan1">透過MapBox提供用戶瀏覽露營區位置時更佳的空間視覺化體驗</li>
                     </ul>
                 </div>
             </div>
@@ -289,7 +290,7 @@
                             <a class="link" href="https://danilo-hung.github.io/kittens-rolodex/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p class="intro"> 該裝置模擬公司成員介紹清單 : 可透過搜尋功能過濾成員，並顯示詳細的成員資訊。網頁同時以ReactJS Class以及Functional
+                        <p class="intro" id="gizmo1Intro"> 該裝置模擬公司成員介紹清單 : 可透過搜尋功能過濾成員，並顯示詳細的成員資訊。網頁同時以ReactJS Class以及Functional
                             (Hook)邏輯編程；風格以手刻CSS進行animate的渲染。
                         </p>
 
@@ -312,8 +313,7 @@
                             <a class="link" href="https://danilo-hung.github.io/2022_QuoteGenerator/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p class="intro"> 透過async fetch reqest 從 web
-                            API中抓取隨機的名言與其作者資訊。並從Tweet及Meta的開發者平台中擷取相關指令製作可將名言即時分享到動態中的DOM練習項目。
+                        <p class="intro" id="gizmo2Intro"> 透過async fetch reqest 從 web API中抓取隨機的名言與其作者資訊。並從Tweet及Meta的開發者平台中擷取相關指令製作可將名言即時分享到動態中的DOM練習項目。
                         </p>
 
                     </div>
@@ -335,7 +335,7 @@
                             <a class="link" href="https://danilo-hung.github.io/pingPongScoreKeeper/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p class="intro"> 該裝置提供用戶計算桌球比賽的比分。透過設定比賽總分，當其中一方玩家達到分數時，顯示勝利玩家。網頁以Bootstrap框架設計網頁的風格，並以該框架的flex
+                        <p class="intro" id="gizmo3Intro"> 該裝置提供用戶計算桌球比賽的比分。透過設定比賽總分，當其中一方玩家達到分數時，顯示勝利玩家。網頁以Bootstrap框架設計網頁的風格，並以該框架的flex
                             box進行切版，是一個結合styling跟JS DOM的練習項目。
                         </p>
 
@@ -358,7 +358,7 @@
                             <a class="link" href="https://danilo-hung.github.io/2022_InfiniteScroll/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p class="intro"> Infinite Scroll 是利用unsplash api 隨機生成圖片，並使其在網頁上進行無限的loading，是一個結合styling跟JS
+                        <p class="intro" id="gizmo4Intro"> Infinite Scroll 是利用unsplash api 隨機生成圖片，並使其在網頁上進行無限的loading，是一個結合styling跟JS
                             DOM的練習項目。
                         </p>
 
@@ -383,7 +383,7 @@
                             <a class="link" href="https://danilo-hung.github.io/firebase-auth/" target="_blank"><i
                                     class="fa-solid fa-desktop"></i></a>
                         </div>
-                        <p class="intro"> Auth Exercise 是利用Google FireBase中的auth跟firestore SDK透過ReactJS搭建的用戶的註冊與登入系統，用戶除了email註冊外，也可透過google與facebook的第三方帳戶登入系統。
+                        <p class="intro" id="gizmo5Intro"> Auth Exercise 是利用Google FireBase中的auth跟firestore SDK透過ReactJS搭建的用戶的註冊與登入系統，用戶除了email註冊外，也可透過google與facebook的第三方帳戶登入系統。
                         </p>
                     </div>
                 </div>
@@ -395,25 +395,49 @@
     </section>
     <!-- Other Experience -->
     <section class="others" id="Others">
-        <h1 class="title">Others</h1>
+        <h1 class="title" id="otherLang1" >其他</h1>
         <p class="sub-title">More about me</p>
         <div class="others-box">
             <div class="text-box work-experiences">
-                <p class="others-title">Work Experiences</p>
-                <p class="others-subtitle">I was an Urban Design</p>
-                <div class="break-line"></div>
+                <p class="others-title" id="workExpLan">工作經歷</p>
+                <p class="others-subtitle" id="workExpSubLan">我是一名IDE擴展和前端開發人員</p>
                 <div class="content-container">
                     <ul>
-                        <li>2020.Aug-2022.Aug <br> AECOM, Urban Designer II</li>
-                        <li>2017.Jul-Aug <br> 國泰人壽不動產投資部, 不動產實習生</li>
-                        <li>2016.Jul <br> 都市計畫實習生</li>
+                        <li>2023.Apr-Now <br> <span id="workExp1">Cienet，前端開發工程師</span> </li>
+                    </ul>
+                </div>
+                <div class="break-line"></div>
+                <p class="others-subtitle" id="workExpSub2Lan">我曾是城市設計師</p>
+                
+                <div class="content-container">
+                    <ul>
+                        <li>2020.Aug-2022.Aug <br> <span id="work2Exp1">AECOM，城市設計師 II</span> </li>
+                        <li>2017.Jul-Aug <br> <span id="work2Exp2">國泰人壽不動產投資部，不動產實習生</span></li>
+                        <li>2016.Jul <br> <span id="work2Exp3">FAP+DA，都市計畫實習生</span></li>
                     </ul>
                 </div>
             </div>
             <div class="text-box work-experiences">
-                <p class="others-title">Other Projects</p>
-                <p class="others-subtitle">when I was an Urban Design</p>
+                <p class="others-title" id="otherPjTitleLan">參與過的專案</p>
+                <p class="others-subtitle" id="otherPjSubLan1">作為一名IDE Extension開發與前端工程師</p>
+                <div class="content-container">
+                    <ul>
+                        <li> 2023 <br> 
+                            <span id="otherPjLan">
+                                與<span style="color: rgb(255, 150, 80);">Google</span>團隊合作，不斷提高其產品的品質
+                            </span> 
+                        </li>
+                        <li> 2023 <br> 
+                            <span id="otherPj2Lan">
+                                依據團隊與客戶需求，於前期獨立開發<span style="color: rgb(255, 150, 80);">VSCode Extension</span>，達成<span style="color: rgb(255, 150, 80);">嵌入式擴展app</span>的<span style="color: rgb(255, 150, 80);">自動化測試系統</span>
+                            </span> 
+                        </li>
+                    </ul>
+                </div>
+
                 <div class="break-line"></div>
+
+                <p class="others-subtitle" id="otherPjSubLan">當我是一名城市設計師的時候</p>
                 <div class="content-container">
                     <ul>
                         <li>Assiststant Urban Designer, 2022 <br> NEOM Regional Plan, <span
@@ -434,7 +458,6 @@
             <div class="text-box work-experiences">
                 <p class="others-title">Other Experiences</p>
                 <p class="others-subtitle">my life experiences</p>
-                <div class="break-line"></div>
                 <div class="content-container">
                     <ul>
                         <li> 2021 <br> 第九屆台灣景觀大獎 佳作獎 : 大嵙崁計畫</li>
@@ -444,7 +467,7 @@
                         <li>2016-2017 <br>成大學生會 公關部副部長</li>
                         <li>2015.Oct <br>臺南海安商圈微電影競賽銅獎</li>
                         <li>2015.Oct<br>2015成大都計人生職涯博覽會 公關</li>
-                        <li>22014.Jul <br>美國遊學與打工 (聖地牙哥與紐約)</li>
+                        <li>2014.Jul <br>美國遊學與打工 (聖地牙哥與紐約)</li>
                     </ul>
                 </div>
             </div>
@@ -498,6 +521,7 @@
         crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
+    <script src="lan.js"></script>
 
 </body>
 
