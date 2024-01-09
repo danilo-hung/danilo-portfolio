@@ -26,7 +26,6 @@ const switchAllLan = (lanList) => {
 };
 
 const toggleLan = () => {
-  console.log("click toggleLan");
   switchAllLan(lanList);
 };
 
@@ -396,13 +395,129 @@ const lanList = [
   {
     name: "otherPj2Lan",
     value: [
-      `依據團隊與客戶需求，於前期獨立開發<span style="color: rgb(255, 150, 80);">VSCode Extension</span>，達成<span style="color: rgb(255, 150, 80);">嵌入式擴展app</span>的<span style="color: rgb(255, 150, 80);">自動化測試系統</span>`, 
-      `Based on team and client requirements, independently developed a <span style="color: rgb(255, 150, 80);">VSCode Extension</span> in the early stages, achieving an <span style="color: rgb(255, 150, 80);">automated testing system</span> for <span style="color: rgb(255, 150, 80);">embedded extension apps</span>.`, 
-      `チームとクライアントの要件に基づき、初期段階で<span style="color: rgb(255, 150, 80);">VSCode拡張機能</span>を独自に開発し、<span style="color: rgb(255, 150, 80);">埋め込み拡張アプリ</span>向けの<span style="color: rgb(255, 150, 80);">自動化テストシステム</span>を実現しました。`, 
+      `依據團隊與客戶需求，於前期獨立開發<span style="color: rgb(255, 150, 80);">VSCode Extension</span>，達成<span style="color: rgb(255, 150, 80);">嵌入式擴展app</span>的<span style="color: rgb(255, 150, 80);">自動化測試系統</span>`,
+      `Based on team and client requirements, independently developed a <span style="color: rgb(255, 150, 80);">VSCode Extension</span> in the early stages, achieving an <span style="color: rgb(255, 150, 80);">automated testing system</span> for <span style="color: rgb(255, 150, 80);">embedded extension apps</span>.`,
+      `チームとクライアントの要件に基づき、初期段階で<span style="color: rgb(255, 150, 80);">VSCode拡張機能</span>を独自に開発し、<span style="color: rgb(255, 150, 80);">埋め込み拡張アプリ</span>向けの<span style="color: rgb(255, 150, 80);">自動化テストシステム</span>を実現しました。`,
+    ],
+  },
+  {
+    name: "otherExpTitleLan",
+    value: [`其他經歷`, `Other Experiences`, `その他の経験`],
+  },
+  {
+    name: "otherExpSubLan",
+    value: [`更多關於我`, `More About Me`, `私についてもっと詳しく`],
+  },
+  {
+    name: "otherExp1Lan",
+    value: [
+      `第九屆台灣景觀大獎 佳作獎 : 大嵙崁計畫`,
+      `9th Taiwan Landscape Awards, Excellence Award: Da Kekan Project`,
+      `第9回台湾ランドスケープアワード、優秀賞：大嵙崁プロジェクト`,
+    ],
+  },
+  {
+    name: "otherExp2Lan",
+    value: [
+      `ATCC全國大專院生商業個案大賽 企業第三名 : ROOT`,
+      `ATCC National College Student Business Case Competition, 3rd Place in the Corporate Category: ROOT`,
+      `ATCC全国大学生ビジネスケースコンペティション、企業カテゴリーで3位：ROOT`,
+    ],
+  },
+  {
+    name: "otherExp3Lan",
+    value: [
+      `台灣設計展-南風館策展助理`,
+      `Taiwan Design Exhibition - Curatorial Assistant for the Southern Pavilion`,
+      `台湾デザイン展 - 南館キュレーションアシスタント`,
+    ],
+  },
+  {
+    name: "otherExp4Lan",
+    value: [
+      `TEDxTainan 設計部`,
+      `TEDxTainan Design Team`,
+      `TEDxTainan デザインチーム`,
+    ],
+  },
+  {
+    name: "otherExp5Lan",
+    value: [
+      `成大學生會 公關部副部長`,
+      `Vice Director of the Public Relations Department, NCKU Student Association`,
+      `NCKU学生会公共関係部副部長`,
+    ],
+  },
+  {
+    name: "otherExp6Lan",
+    value: [
+      `臺南海安商圈微電影競賽銅獎`,
+      `Bronze Award in the Tainan Hai An Business District Microfilm Competition`,
+      `台南海安ビジネス地区マイクロフィルムコンペティションでの銅賞`,
+    ],
+  },
+  {
+    name: "otherExp7Lan",
+    value: [
+      `2015成大都計人生職涯博覽會 公關`,
+      `2015 NCKU Urban Planning Career Expo, Public Relations`,
+      `2015年NCKU都市計画キャリアエキスポ、パブリックリレーションズ`,
+    ],
+  },
+  {
+    name: "otherExp8Lan",
+    value: [
+      `美國遊學與打工 (聖地牙哥與紐約)`,
+      `Study and Part Time Work in the United States (San Diego and New York)`,
+      `アメリカ留学と仕事 (サンディエゴとニューヨーク)`,
     ],
   },
   {
     name: "contactLang",
     value: [`聯繫我`, `Contact`, `連絡先`],
+  },
+  {
+    name: "contact1Lang",
+    value: [`您好`, `Hi, there`, `こんにちは、`],
+  },
+  {
+    name: "contact2Lang",
+    value: [
+      `謝謝您造訪我的個人網站。`,
+      `Thank you for visiting my personal website.`,
+      `私の個人ウェブサイトを訪れていただき、ありがとうございます。`,
+    ],
+  },
+  {
+    name: "contact3Lang",
+    value: [
+      `如果您正在尋找前端工程師夥伴`,
+      `If you are looking for a frontend engineer partner,`,
+      `フロントエンドエンジニアのパートナーをお探しの場合、`,
+    ],
+  },
+  {
+    name: "contact4Lang",
+    value: [
+      `請不吝與我聯繫洽談更多的細節`,
+      `please feel free to contact me to discuss more details.`,
+      `詳細についてご相談いただくためにお気軽にお問い合わせください。`,
+    ],
+  },
+  {
+    name: "contact5Lang",
+    value: [
+      `祝您有個愉快的一天`,
+      `Wishing you a pleasant day.`,
+      `素敵な一日をお過ごしください。`,
+    ],
+  },
+  {
+    name: "contactLang1",
+    value: [`聯繫我`, `Contact`, `連絡先`],
+  },
+  {
+    name: "contactLang2",
+    value: [`我的電子信箱`, `My Email`, `私のメールアドレス`],
   },
 ];
